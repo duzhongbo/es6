@@ -87,13 +87,22 @@
 
 // 为什么需要块级作用域？
 // 场景1：内层变量可能会覆盖外层变量(变量升级导致的覆盖)
-var tmp = new Date();
+// var tmp = new Date();
 
-function f(){
-  console.log(tmp);
-  if (false){
-    var tmp = "hello world";
-  }
+// function f(){
+//   console.log(tmp);
+//   if (false){
+//     var tmp = "hello world";
+//   }
+// }
+
+// f() // undefined
+
+// 场景2：用来计数的循环变量泄露为全局变量
+var s = 'hello';
+
+for (var i = 0; i < s.length; i++){
+  console.log(s[i]);
 }
 
-f() // undefined
+console.log(i); // 5
