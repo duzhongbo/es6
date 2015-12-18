@@ -61,3 +61,15 @@
 //   tmp = 123;
 //   console.log(tmp); // 123
 // }
+
+// 例子6，不允许重复声明一个变量
+// 报错
+// function k() {
+//   let a = 10;
+//   var a = 1;
+// }
+// 报错
+function k() {
+  let a = 10;
+  let a = 1;
+}
