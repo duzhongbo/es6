@@ -37,5 +37,8 @@
 
 // 例子6，对象冻结
 const foo = Object.freeze({});
-foo.prop = 123; // 报错
+// foo.prop = 123; // 报错
+console.log(foo.constructor);// 对象属性仍可访问，未冻结
+
+
 
