@@ -14,16 +14,20 @@
 
 
 // 解构3
-let [ , , third] = ["foo", "bar", "baz"];
-console.log(third);
+// let [ , , third] = ["foo", "bar", "baz"];
+// console.log(third);
 
 // 解构4
-let [x, , y] = [1, 2, 3];
-console.log(x,y);
+// let [x, , y] = [1, 2, 3];
+// console.log(x,y);
 
 // 解构5
-let [head, ...tail] = [1, 2, 3, 4];
-console.log(head,tail);
+// let [head, ...tail] = [1, 2, 3, 4];
+// console.log(head,tail);
+
+// 解构6
+let [x, y, ...z] = ['a'];
+console.log(x,y,z);
 
 
 
