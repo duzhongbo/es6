@@ -30,9 +30,12 @@
 // console.log(x,y,z);
 
 // 默认值
-var [foo = true] = [];
-console.log(foo);
+// var [foo = true] = [];
+// console.log(foo);
 
+// 默认值1
+var [x, y = 'b'] = ['a'] // x='a', y='b'
+console.log(x,y);
 
 
 
