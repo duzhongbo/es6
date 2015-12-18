@@ -38,11 +38,12 @@
 // console.log(x,y);
 
 // 默认值2
-var [x = 1] = [undefined];
+// var [x = 1] = [undefined];
+// console.log(x);
+
+// 如果一个数组成员不严格等于undefined，默认值是不会生效
+var [x = 1] = [null];
 console.log(x);
-
-
-
 
 
 
