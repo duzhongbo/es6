@@ -69,7 +69,18 @@
 //   var a = 1;
 // }
 // 报错
-function k() {
-  let a = 10;
-  let a = 1;
+// function k() {
+//   let a = 10;
+//   let a = 1;
+// }
+
+// 例子7
+// function func(arg) {
+//   let arg; // 报错
+// }
+
+function func(arg) {
+  {
+    let arg; // 不报错
+  }
 }
