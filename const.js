@@ -30,9 +30,12 @@
 // foo = {} // 报错
 
 // 例子5
-const a = [];
-a.push("Hello"); // 可执行
-a.length = 0;    // 可执行
-a = ["Dave"];    // 报错
+// const a = [];
+// a.push("Hello"); // 可执行
+// a.length = 0;    // 可执行
+// a = ["Dave"];    // 报错
 
+// 例子6，对象冻结
+const foo = Object.freeze({});
+foo.prop = 123; // 报错
 
