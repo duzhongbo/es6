@@ -36,9 +36,17 @@
 // a = ["Dave"];    // 报错
 
 // 例子6，对象冻结
-const foo = Object.freeze({});
-// foo.prop = 123; // 报错
-console.log(foo.constructor);// 对象属性仍可访问，未冻结
+// const foo = Object.freeze({});
+// // foo.prop = 123; // 报错
+// console.log(foo.constructor);// 对象属性仍可访问，未冻结
 
-
+// 例子7，对象彻底冻结，包括属性
+var constantize = (obj) => {
+  Object.freeze(obj);
+  Object.keys(obj).forEach( (key, value) => {
+    if ( typeof obj[key] === 'object' ) {
+      constantize( obj[key] );
+    }
+  });
+};
 
