@@ -99,10 +99,21 @@
 // f() // undefined
 
 // 场景2：用来计数的循环变量泄露为全局变量
-var s = 'hello';
+// var s = 'hello';
 
-for (var i = 0; i < s.length; i++){
-  console.log(s[i]);
-}
+// for (var i = 0; i < s.length; i++){
+//   console.log(s[i]);
+// }
 
-console.log(i); // 5
+// console.log(i); // 5
+
+//ES6也规定，函数本身的作用域，在其所在的块级作用域之内,es5:inside,es6:outside,因为变量提升
+function f() { console.log('I am outside!'); }
+(function () {
+  if(false) {
+    // 重复声明一次函数f
+    function f() { console.log('I am inside!'); }
+  }
+
+  f();
+}());
