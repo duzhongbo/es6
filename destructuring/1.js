@@ -34,11 +34,12 @@
 // console.log(foo);
 
 // 默认值1
-var [x, y = 'b'] = ['a'] // x='a', y='b'
-console.log(x,y);
+// var [x, y = 'b'] = ['a'] // x='a', y='b'
+// console.log(x,y);
 
-
-
+// 默认值2
+var [x = 1] = [undefined];
+console.log(x);
 
 
 
