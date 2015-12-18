@@ -79,8 +79,21 @@
 //   let arg; // 报错
 // }
 
-function func(arg) {
-  {
-    let arg; // 不报错
+// function func(arg) {
+//   {
+//     let arg; // 不报错
+//   }
+// }
+
+// 为什么需要块级作用域？
+// 场景1：内层变量可能会覆盖外层变量(变量升级导致的覆盖)
+var tmp = new Date();
+
+function f(){
+  console.log(tmp);
+  if (false){
+    var tmp = "hello world";
   }
 }
+
+f() // undefined
