@@ -26,11 +26,12 @@
 // console.log(head,tail);
 
 // 解构6
-let [x, y, ...z] = ['a'];
-console.log(x,y,z);
+// let [x, y, ...z] = ['a'];
+// console.log(x,y,z);
 
-
-
+// 默认值
+var [foo = true] = [];
+console.log(foo);
 
 
 
