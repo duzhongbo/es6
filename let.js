@@ -44,8 +44,20 @@
 
 
 // 例子5，暂时性死区
-var tmp = 123;
-if(true){
-	tmp = 'abc';// ReferenceError
-	let tmp;
-} 
+// var tmp = 123;
+// // if(true){
+// // 	tmp = 'abc';// ReferenceError
+// // 	let tmp;
+// // }
+
+// if (true) {
+//   // TDZ开始
+//   // tmp = 'abc'; // ReferenceError
+//   // console.log(tmp); // ReferenceError
+
+//   let tmp; // TDZ结束
+//   console.log(tmp); // undefined
+
+//   tmp = 123;
+//   console.log(tmp); // 123
+// }
