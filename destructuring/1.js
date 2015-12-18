@@ -1,11 +1,16 @@
 'use strict';
 
-// var a = 1;
-// var b = 2;
-// var c = 3;
+// 解构1
 
-var [a, b, c] = [1, 2, 3];
-console.log(a,b,c);
+// var [a, b, c] = [1, 2, 3];
+// console.log(a,b,c);
+
+// 解构2
+
+let [foo, [[bar], baz]] = [1, [[2], 3]];
+console.log(foo);// 1
+console.log(bar);// 2
+console.log(baz);// 3
 
 
 
