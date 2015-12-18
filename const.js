@@ -9,4 +9,17 @@
 
 // 例子2
 // const foo;// 报错
-const foo=1;
+// const foo=1;
+
+
+// 例子3
+if (true) {
+  const MAX = 5;
+  console.log(MAX);
+}
+
+// console.log(MAX);
+
+
+
+
