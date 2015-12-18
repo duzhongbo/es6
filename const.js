@@ -13,13 +13,26 @@
 
 
 // 例子3
-if (true) {
-  const MAX = 5;
-  console.log(MAX);
-}
+// if (true) {
+//   const MAX = 5;
+//   console.log(MAX);
+// }
 
 // console.log(MAX);
 
 
+// 例子4，对于复合类型的变量，变量名不指向数据，而是指向数据所在的地址。const命令只是保证变量名指向的地址不变，并不保证该地址的数据不变
+// const foo = {};
+// foo.prop = 123;
+
+// console.log(foo.prop);
+
+// foo = {} // 报错
+
+// 例子5
+const a = [];
+a.push("Hello"); // 可执行
+a.length = 0;    // 可执行
+a = ["Dave"];    // 报错
 
 
