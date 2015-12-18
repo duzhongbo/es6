@@ -21,6 +21,9 @@ console.log(third);
 let [x, , y] = [1, 2, 3];
 console.log(x,y);
 
+// 解构5
+let [head, ...tail] = [1, 2, 3, 4];
+console.log(head,tail);
 
 
 
