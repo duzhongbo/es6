@@ -41,3 +41,11 @@
 
 // typeof x; // ReferenceError
 // let x;
+
+
+// 例子5，暂时性死区
+var tmp = 123;
+if(true){
+	tmp = 'abc';// ReferenceError
+	let tmp;
+} 
