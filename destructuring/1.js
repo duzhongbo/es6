@@ -17,8 +17,9 @@
 let [ , , third] = ["foo", "bar", "baz"];
 console.log(third);
 
-
-
+// 解构4
+let [x, , y] = [1, 2, 3];
+console.log(x,y);
 
 
 
