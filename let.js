@@ -38,3 +38,6 @@
 
 // console.log(foo); // undefined
 // var foo = 2;
+
+// typeof x; // ReferenceError
+// let x;
