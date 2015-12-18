@@ -24,10 +24,17 @@
 // }
 // a[6](); // 10
 
-var a = [];
-for (let i = 0; i < 10; i++) {
-  a[i] = function () {
-    console.log(i);
-  };
-}
-a[6](); // 6
+// var a = [];
+// for (let i = 0; i < 10; i++) {
+//   a[i] = function () {
+//     console.log(i);
+//   };
+// }
+// a[6](); // 6
+
+// 例子4，不存在变量升级
+// console.log(foo); // ReferenceError
+// let foo = 2;
+
+// console.log(foo); // undefined
+// var foo = 2;
